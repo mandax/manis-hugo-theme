@@ -14,14 +14,14 @@
 		<link rel="stylesheet" href="/css/ui.css"/>
 		<link rel="stylesheet" href="/css/syntax.css"/>
 		{{ else }}
-		<link rel="stylesheet" href="/css/ui.min.css"/>
+		<link rel="stylesheet" href="/css/ui.css"/>
 		{{ end }}
 		
 		{{ range .Site.Params.CustomCSS }}
 		<link rel="stylesheet" href="{{ . }}"/>
 		{{ end }}
 
-		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Raleway">
+		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans|Sansita+One">
 
 		{{ if .Site.Params.HighlightJs }}
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{- .Site.Params.HighlightJsStyle -}}.min.css">
